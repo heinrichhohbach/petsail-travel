@@ -22,4 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', home_views.get_index, name='index'),
     url(r'^register/$', account_views.register, name='register'),
+    url(r'^profile/$', account_views.profile, name='profile'),
+    url(r'^login/$', account_views.login, name='login'),
+    url(r'^merchant-profile/$', account_views.merchantprofile, name='merchant'),
 ]

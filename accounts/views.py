@@ -16,19 +16,24 @@ from models import User
 import arrow
 import json
 
+
 # Create your views here.
 def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
+            user.is_merchant = request.POST.get('merchantstatus')
+            user.save()
 
             user = auth.authenticate(email=request.POST.get('email'),
-                                     password=request.POST.get('password1'))
+                                     password=request.POST.get('password1')
+                                     )
 
             if user:
+                auth.login(request, user)
                 messages.success(request, "You have successfully registered")
-                return redirect(reverse('index'))
+                return redirect(reverse('profile'))
 
             else:
                 messages.error(request, "Unable to register you at this time.")
@@ -39,4 +44,44 @@ def register(request):
     args = {'form': form}
     args.update(csrf(request))
 
-    return render(request, 'register.html', args)
+    return render(request, 'accounts/register.html', args)
+
+
+@login_required(login_url='/login/')
+def profile(request):
+    return render(request, 'accounts/profile.html')
+
+
+@login_required(login_url='/login/')
+def merchantprofile(request):
+    return render(request, 'accounts/merchant_profile.html')
+
+
+def login(request):
+    if request.method == 'POST':
+        form = UserLoginForm(request.POST)
+        if form.is_valid():
+            user = auth.authenticate(email=request.POST.get('email'),
+                                     password=request.POST.get('password'))
+
+            if user is not None:
+                auth.login(request, user)
+                if user.is_merchant == 'Yes':
+                    return redirect(reverse('merchant'))
+                else:
+                    return redirect(reverse('profile'))
+            else:
+                form.add_error(None, "Your email or password was incorrect")
+
+    else:
+        form = UserLoginForm()
+
+    args = {'form': form}
+    args.update(csrf(request))
+    return render(request, 'accounts/login.html', args)
+
+
+def logout(request):
+    auth.logout(request)
+    messages.success(request, 'You have successfully logged out')
+    return render(request, 'index.html')

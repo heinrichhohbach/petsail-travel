@@ -5,19 +5,29 @@ from django.core.exceptions import ValidationError
 
 
 class UserRegistrationForm(UserCreationForm):
+    MERCHANT_CHOICE = (
+        ('Yes', 'Yes'),
+        ('No', 'No'),
+    )
+
     password1 = forms.CharField(
         label='Password',
         widget=forms.PasswordInput
     )
 
     password2 = forms.CharField(
-        label='Password Confirmation',
+        label='Confirm Password',
         widget=forms.PasswordInput
+    )
+
+    merchantstatus = forms.ChoiceField(
+        label='Are you a merchant?',
+        choices=MERCHANT_CHOICE
     )
 
     class Meta:
         model = User
-        fields = ['email', 'password1', 'password2']
+        fields = ['email', 'password1', 'password2', 'merchantstatus']
         exclude = ['username']
 
     def clean_password2(self):

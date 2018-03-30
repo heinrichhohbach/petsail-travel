@@ -23,4 +23,5 @@ class AccountUserManager(UserManager):
 
 
 class User(AbstractUser):
+    is_merchant = models.CharField(max_length=3, default='')
     objects = AccountUserManager()
