@@ -24,10 +24,10 @@
             {% if user.is_authenticated %}
                 {% if user.is_merchant == 'Yes' %}
                 <li><a href="{% url 'merchant' %}">Profile</a></li>
-                <li><a href="">Log Out</a></li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
                 {% else %}
                 <li><a href="{% url 'profile' %}">Profile</a></li>
-                <li><a href="">Log Out</a></li>
+                <li><a href="{% url 'logout' %}">Log Out</a></li>
                 {% endif %}
             {% else %}
                 <li><a href="{% url 'register' %}">Register</a></li>

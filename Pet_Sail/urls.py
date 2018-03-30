@@ -19,10 +19,14 @@ from home import views as home_views
 from accounts import views as account_views
 
 urlpatterns = [
+    # General setup
     url(r'^admin/', admin.site.urls),
     url(r'^$', home_views.get_index, name='index'),
+
+    # Account URLs
     url(r'^register/$', account_views.register, name='register'),
     url(r'^profile/$', account_views.profile, name='profile'),
     url(r'^login/$', account_views.login, name='login'),
     url(r'^merchant-profile/$', account_views.merchantprofile, name='merchant'),
+    url(r'^logout/$', account_views.logout, name='logout'),
 ]
