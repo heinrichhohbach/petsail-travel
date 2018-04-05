@@ -15,7 +15,7 @@ from django.http import HttpResponse
 from models import User
 import arrow
 import json
-
+from merchant_dash.models import Ad
 
 # Create your views here.
 def register(request):
@@ -54,7 +54,10 @@ def profile(request):
 
 @login_required(login_url='/login/')
 def merchantprofile(request):
-    return render(request, 'accounts/merchant_profile.html')
+    current_user = request.user
+    ads = Ad.objects.filter(user=current_user.id)
+    return render(request, 'accounts/merchant_profile.html',
+                  {'Ad': ads})
 
 
 def login(request):
