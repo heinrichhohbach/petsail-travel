@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'bootstrap_datepicker',
     'ckeditor',
     'ckeditor_uploader',
+    'contact_us_app',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
