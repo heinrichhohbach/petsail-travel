@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'contact_us_app',
+    'checkout',
+    'stripe',
 ]
 
 AUTH_USER_MODEL = 'accounts.User'
@@ -153,4 +155,7 @@ CKEDITOR_IMAGE_BACKEND = "pillow"
 
 IMAGE_QUALITY = 40
 THUMBNAIL_SIZE = (300, 300)
+
+STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_wJQGnHfgKP7A5TwD4x93baZu')
+STRIPE_SECRET = os.getenv('STRIPE_SECRET', 'sk_test_YgCqwaPXGPgMoi9YaZEPBIbi')
 

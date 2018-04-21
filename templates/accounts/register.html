@@ -1,12 +1,23 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
-    <form role="form" method="post" action="{% url 'register' %}">
-        <legend>Create a new account</legend>
-        {% csrf_token %}
-        {{ form | as_bootstrap }}
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Create account</button>
-        </div>
-    </form>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/custom-css/custom-css.css">
+    <div class="col-md-12" id="register-form-header">
+        <h2>Want to buy or sell on our site? Register an Account!</h2>
+        <p>
+            It's nothing personal that we ask for people to register. It just makes it so much easier for us to contact you
+            if anything comes up.<br>We're not going to be annoying or anything, it's all just here to reduce future hassles.<br>
+            <i class="em em-cat"></i><i class="em em-dog"></i>
+        </p>
+    </div>
+    <div class="col-md-12" id="register-form-style">
+        <form role="form" method="post" action="{% url 'register' %}">
+            {% csrf_token %}
+            {{ form | as_bootstrap }}
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Create account</button>
+            </div>
+        </form>
+    </div>
 {% endblock %}

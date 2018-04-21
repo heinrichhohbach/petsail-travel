@@ -19,12 +19,16 @@ from django.contrib import admin
 from home import views as home_views
 from accounts import views as account_views
 from merchant_dash import views as merch_views
+from contact_us_app import views as contact_views
+from checkout import views as checkout_views
 
 urlpatterns = [
     # General setup
     url(r'^admin/', admin.site.urls),
     url(r'^$', home_views.get_index, name='index'),
     url(r'^tinymce/', include('tinymce.urls')),
+    url(r'^contact-us/$', contact_views.new_contact, name='contact_us'),
+    url(r'^about-us/$', home_views.get_about, name='about'),
 
     # Account URLs
     url(r'^register/$', account_views.register, name='register'),
@@ -40,4 +44,7 @@ urlpatterns = [
 
     # Image Upload
     url(r'^ckeditor/', include(ck_url)),
+
+    # Holiday Sale Checkout
+    url(r'^check-out/', checkout_views.checkoutview),
 ]

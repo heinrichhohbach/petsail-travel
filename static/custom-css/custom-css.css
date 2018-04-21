@@ -1,0 +1,203 @@
+/*Navigation bar styling*/
+.masthead h1{
+    font-family: 'Black Han Sans', sans-serif;
+    color: black;
+}
+
+.masthead i{
+    margin-right: 4px;
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+/*Footer Styling*/
+.social-tags {
+    font-size: 30px;
+    text-align: right;
+
+}
+
+/*Index Page Design*/
+.index-body img{
+    height: 800px;
+    width: 100%;
+}
+
+.index-body h1{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 60px;
+    color: #FFFFFF;
+    align-items: baseline;
+
+}
+
+.index-body h2{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.header-index{
+    height: 400px;
+    width: 100%;
+    background: url(../images/dogs.png) center;
+    border-radius: 5px;
+
+}
+
+.centerme {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#intro-section h2{
+    color: #000000;
+}
+
+#intro-section p{
+    text-align: left;
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#more-info-section h2{
+    color: #000000;
+}
+
+#more-info-section p{
+    text-align: left;
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*About Us Page styling*/
+
+.header-index2{
+    height: 400px;
+    width: 100%;
+    background: url(../images/cats.png) center;
+    border-radius: 5px;
+
+}
+
+#about-block h2{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+#about-block p {
+    text-align: center;
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*Contact us Styling*/
+
+#contact-header{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+#contact-body {
+    text-align: center;
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.form-style {
+    background-color: #EFEFEF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*Ad Listing Styling*/
+ #ad-listing-table-border {
+     border: 1px solid #3AAFA9;
+     text-align: center;
+     padding: 10px;
+     border-radius: 5px;
+ }
+
+ #ad-listing-table {
+    margin-top: 20px;
+ }
+
+ #ad-listing-table th{
+     text-align: center;
+     color: white;
+ }
+
+ #ad-listing-table thead{
+     background-color: #14A76C;
+ }
+
+ #ad-listing-header h2{
+     text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+ }
+
+ #ad-listing-header p{
+     text-align: center;
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ #ad-listing-header {
+     margin-bottom: 10px;
+ }
+
+ #vacation-title-style a{
+     color: #FF652F;
+ }
+
+ #vacation-title-style p {
+     color: black;
+     font-size: 10px;
+ }
+
+ /*Register form Styling*/
+#register-form-style {
+    background-color: #EAE7DC;
+    border: 1px solid #159955;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#register-form-header h2{
+     text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+ }
+
+ #register-form-header p{
+     text-align: center;
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+ }
+
+ #register-form-header{
+     margin-bottom: 10px;
+ }
+
+#register-form-style label{
+    color: #159955;
+}

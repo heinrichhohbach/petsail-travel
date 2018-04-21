@@ -25,7 +25,7 @@ class ContactUsForm(forms.ModelForm):
 
     class Meta:
         model = ContactUs
-        fields = ['contact_title', 'contact_name', 'contact_email' 'query_type',
+        fields = ['contact_title', 'contact_name', 'contact_email', 'query_type',
                   'query_text']
 
     def clean_email(self):

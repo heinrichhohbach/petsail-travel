@@ -1,5 +1,16 @@
 {% extends "base.html" %}
+{% load bootstrap_tags %}
 {% block content %}
-    <h2>Success!</h2>
-    <p>You are on our Contact Us Page. </p>
+    <link rel="stylesheet" type="text/css" href="../../static/custom-css/custom-css.css">
+    <h2 id="contact-header">Want to talk to us? Contact us below!</h2>
+    <p id="contact-body">No matter what your query or concern is, we'll do our best to fix the problem!</p>
+    <div class="col-md-12 form-style">
+    <form role="form" method="post" action="{% url 'contact_us' %}">
+        {% csrf_token %}
+        {{ form | as_bootstrap }}
+        <div class="form-group">
+            <button type="submit" class="btn btn-primary">Send Message!</button>
+        </div>
+    </form>
+    </div>
 {% endblock %}
