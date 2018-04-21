@@ -1,8 +1,10 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
+    <!-- CSS REFERENCE -->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../static/custom-css/custom-css.css">
+    <!-- CSS REFERENCE END -->
     <div class="col-md-12" id="register-form-header">
         <h2>Want to buy or sell on our site? Register an Account!</h2>
         <p>
@@ -11,7 +13,8 @@
             <i class="em em-cat"></i><i class="em em-dog"></i>
         </p>
     </div>
-    <div class="col-md-12" id="register-form-style">
+    <div class="col-md-3"></div>
+    <div class="col-md-6" id="register-form-style">
         <form role="form" method="post" action="{% url 'register' %}">
             {% csrf_token %}
             {{ form | as_bootstrap }}
@@ -20,4 +23,5 @@
             </div>
         </form>
     </div>
+    <div class="col-md-3"></div>
 {% endblock %}

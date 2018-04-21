@@ -17,6 +17,7 @@ import arrow
 import json
 from merchant_dash.models import Ad
 
+
 # Create your views here.
 def register(request):
     if request.method == 'POST':
@@ -30,7 +31,11 @@ def register(request):
                                      password=request.POST.get('password1')
                                      )
 
-            if user:
+            if user.is_merchant == "Yes":
+                auth.login(request, user)
+                messages.success(request, "You have successfully registered")
+                return redirect(reverse('merchant'))
+            elif user.is_merchant == "No":
                 auth.login(request, user)
                 messages.success(request, "You have successfully registered")
                 return redirect(reverse('profile'))

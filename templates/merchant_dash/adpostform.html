@@ -3,13 +3,31 @@
 {% block content %}
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <!-- CSS REFERENCE -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/custom-css/custom-css.css">
+    <!-- CSS REFERENCE END -->
     </head>
     <body>
-        <form method="post" action="./">
-            {% csrf_token %}
-            {{ form.media }}
-            {{ form.as_p }}
-            <p><input type="submit" value="post"></p>
-        </form>
+    <div class="col-md-12" id="new-ad-header-style">
+        <h2>Create your ad below</h2>
+        <p>
+            This is our easy to use editor for your ads. Use the options below to choose a Title <br>and write a small description
+            (The description shows up on our listings!).<br>Then simply write your ad in our editor and set the date the vacation
+            is available for.<br>Remember to set your price for the holiday so people know how affordable your getaway is!<br>
+            <br><b>PLEASE NOTE:</b> We currently only allow images to be linked and not uploaded.<br>Websites like 'TinyPic' and
+            similar can be used for image uploads and then easily added to the post!
+        </p>
+    </div>
+    <div class="col-md-1"></div>
+        <div class="col-md-9 new-ad-styling" id="">
+            <form method="post" action="./">
+                {% csrf_token %}
+                {{ form.media }}
+                {{ form.as_p }}
+                <p id="input-submit-style"><input type="submit" value="Place ad"></p>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
     </body>
 {% endblock %}

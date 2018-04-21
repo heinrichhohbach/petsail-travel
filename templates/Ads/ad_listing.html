@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
+    <!-- CSS REFERENCE -->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../static/custom-css/custom-css.css">
+    <!-- CSS REFERENCE END -->
     <div class="col-md-12" id="ad-listing-header">
         <h2>These are our Vacation Listings!</h2>
         <p>
@@ -18,6 +20,7 @@
                 <th>Description</th>
                 <th>Start Date</th>
                 <th>End Date</th>
+                <th>Price (£ per day)</th>
             </tr>
         </thead>
         <tbody>
@@ -27,6 +30,7 @@
                     <td>{{ ad.ad_summary}}</td>
                     <td>{{ ad.start_date }}</td>
                     <td>{{ ad.end_date }}</td>
+                    <td>£{{ ad.ad_price }}</td>
                 </tr>
             {% endfor %}
         </tbody>

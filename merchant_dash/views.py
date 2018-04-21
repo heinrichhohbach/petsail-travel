@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
 from .models import Ad
 from .forms import AdPostForm
 from django.shortcuts import redirect
+from django.contrib import messages
 
 
 # Create your views here.
@@ -14,6 +16,7 @@ def ad_detail(request, id):
     return render(request, "merchant_dash/addetail.html", {'post': ad})
 
 
+@login_required(login_url='/login/')
 def new_ad(request):
     if request.method == "POST":
         ad_form = AdPostForm(request.POST)
@@ -32,3 +35,13 @@ def all_ads(request):
     ads = Ad.objects.all()
     return render(request, 'Ads/ad_listing.html',
                   {'Ad': ads})
+
+
+@login_required
+def delete_post(request, ad_id):
+    post = get_object_or_404(Ad, pk=ad_id)
+    post.delete()
+
+    messages.success(request, "Your post was deleted!")
+
+    return redirect('merchant')

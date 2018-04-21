@@ -1,12 +1,25 @@
 {% extends "base.html" %}
 {% load bootstrap_tags %}
 {% block content %}
-    <form role="form" method="post" action="{% url 'login' %}">
-        <legend>Login</legend>
-        {% csrf_token %}
-        {{ form| as_bootstrap }}
-        <div class="form-group">
-            <button type="submit" class="btn btn-primary">Login</button>
-        </div>
-    </form>
+    <!-- CSS REFERENCE -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/custom-css/custom-css.css">
+    <!-- CSS REFERENCE END -->
+    <div class="col-md-12" id="login-form-header">
+        <h2>Coming back? Login below!</h2>
+        <p>
+            We're always glad when someone returns.<br><i class="em em-cat"></i> Welcome back! <i class="em em-dog"></i>
+        </p>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-6" id="login-form-styling">
+        <form role="form" method="post" action="{% url 'login' %}">
+            {% csrf_token %}
+            {{ form| as_bootstrap }}
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-3"></div>
 {% endblock %}

@@ -18,6 +18,7 @@ class Ad(models.Model):
     start_date = models.DateField(blank=True, null=True)
     end_date = models.DateField(blank=True, null=True)
     published = models.CharField(max_length=3, default='Yes')
+    ad_price = models.DecimalField(max_digits=5, decimal_places=2, default=0)
 
     def __str__(self):
         return self.subject

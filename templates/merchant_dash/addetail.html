@@ -1,13 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div>
-        <h3><a href="">{{ post.subject }}</a></h3>
+    <!-- CSS REFERENCE -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/custom-css/custom-css.css">
+    <!-- CSS REFERENCE END -->
+    <div class="ad-details-style">
+        <h3 id="ad-details-header-style"><a href="">{{ post.subject }}</a></h3>
 
         <p>{{ post.description|safe }}</p>
 
         <p>
-            <button class="btn btn-default" onclick="location.href='{% url 'adlisting' %}'">Back to Holiday Listings</button>
+            <button class="btn btn-primary" onclick="location.href='{% url 'adlisting' %}'">Back to Holiday Listings</button>
         </p>
 
     </div>

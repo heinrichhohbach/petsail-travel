@@ -1,5 +1,15 @@
 {% extends "base.html" %}
 {% block content %}
-    <h2>Success!</h2>
-    <p>You are logged in as {{ user.email }} </p>
+    <!-- CSS REFERENCE -->
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../static/custom-css/custom-css.css">
+    <!-- CSS REFERENCE END -->
+    <div class="col-md-12" id="user-profile-header">
+        <h2><i class="em em-cat"></i> This is your profile! <i class="em em-dog"></i></h2>
+        <h4>You are Logged in as: <b>{{ user.email }}</b></h4>
+    </div>
+    <hr>
+    <div class="col-md-12" id="previous-sale-style">
+        <h4>Previous Sales</h4>
+    </div>
 {% endblock %}

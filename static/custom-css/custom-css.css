@@ -119,9 +119,15 @@ a {
 }
 
 .form-style {
-    background-color: #EFEFEF;
-    border-radius: 10px;
-    padding: 10px;
+    background-color: #EAE7DC;
+    border: 1px solid #F76C6C;
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+.form-style label{
+    color: #F76C6C;
 }
 
 /*Ad Listing Styling*/
@@ -200,4 +206,197 @@ a {
 
 #register-form-style label{
     color: #159955;
+}
+
+/*Login Form Styling*/
+#login-form-header h2{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+#login-form-header p{
+    text-align: center;
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#login-form-styling{
+    background-color: #EAE7DC;
+    border: 1px solid #5680E9;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+#login-form-styling label{
+    color: #5680E9;
+}
+
+/*General User Profile Styling*/
+#user-profile-header h2{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+#user-profile-header h4{
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#previous-sale-style h4{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    color: #000000;
+    margin-top: 20px;
+}
+
+/*Merchant Profile Styling*/
+
+#merchant-style-header h2{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+#merchant-style-header p{
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-line-styling {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#delete-post-style a{
+    color: red;
+}
+
+/*New Ad Styling*/
+
+.new-ad-styling p label{
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.new-ad-styling p input{
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555555;
+    background: #ffffff none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.new-ad-styling p select{
+    border-radius: 5px;
+    margin-right: 2px;
+    padding: 3px;
+}
+
+#input-submit-style {
+    width: 15%;
+}
+
+#input-submit-style input{
+    color: #ffffff;
+    background-color: #c71c22;
+    border-color: #c71c22;
+}
+
+#new-ad-header-style h2{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
+
+#new-ad-header-style p{
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#new-ad-header-style{
+    margin-bottom: 25px;
+}
+
+/*Ad Detail View*/
+#ad-details-header-style{
+    text-align: center;
+    font-family: 'Black Han Sans', sans-serif;
+    font-size: 30px;
+    color: #000000;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.ad-details-style p{
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.ad-details-style h1{
+    text-align: center;
+    color: black;
+}
+
+.ad-details-style h2{
+    text-align: center;
+    color: black;
+}
+
+.ad-details-style h3{
+    text-align: center;
+    color: black;
+}
+
+.ad-details-style h4{
+    text-align: center;
+    color: black;
+}
+
+.ad-details-style h5{
+    text-align: center;
+    color: black;
+}
+
+.ad-details-style h6{
+    text-align: center;
+    color: black;
+}
+
+.ad-details-style img{
+    text-align: center;
+}
+
+.ad-details-style button{
+    margin-top: 30px;
 }

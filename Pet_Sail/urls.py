@@ -41,6 +41,7 @@ urlpatterns = [
     url(r'^post/(?P<id>\d+)/$', merch_views.ad_detail, name='view_ad_post'),
     url(r'^post/$', merch_views.new_ad, name='new_post'),
     url(r'^all-ads/$', merch_views.all_ads, name='adlisting'),
+    url(r'^post/delete/(?P<ad_id>\d+)/$', merch_views.delete_post, name='delete_post'),
 
     # Image Upload
     url(r'^ckeditor/', include(ck_url)),
