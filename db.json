@@ -1,0 +1,504 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "1mw3k7n3yu35k7w5y9jnici6d6yc4q65",
+    "fields": {
+        "session_data": "NDdlMjgwODcwMjE5NWQ4OWExYWJkNDQxZDEzZGY1YTY1OWJiMzAwMjp7Il9hdXRoX3VzZXJfaGFzaCI6IjZmMzkyNTlkYmI4Y2IzZjY1NzlhOTU4YmNmNjUzZDNiZDZiYWY3OTkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kLkVtYWlsQXV0aCIsIl9hdXRoX3VzZXJfaWQiOiIxMiJ9",
+        "expire_date": "2018-04-16T19:53:44.504Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "luzao3ikmu7enaqzpdn158ytx5bbypnc",
+    "fields": {
+        "session_data": "NDdlMjgwODcwMjE5NWQ4OWExYWJkNDQxZDEzZGY1YTY1OWJiMzAwMjp7Il9hdXRoX3VzZXJfaGFzaCI6IjZmMzkyNTlkYmI4Y2IzZjY1NzlhOTU4YmNmNjUzZDNiZDZiYWY3OTkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kLkVtYWlsQXV0aCIsIl9hdXRoX3VzZXJfaWQiOiIxMiJ9",
+        "expire_date": "2018-05-06T20:00:39.378Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "trpp1r161stdbs6nfz00i5lz126snbbe",
+    "fields": {
+        "session_data": "NDdlMjgwODcwMjE5NWQ4OWExYWJkNDQxZDEzZGY1YTY1OWJiMzAwMjp7Il9hdXRoX3VzZXJfaGFzaCI6IjZmMzkyNTlkYmI4Y2IzZjY1NzlhOTU4YmNmNjUzZDNiZDZiYWY3OTkiLCJfYXV0aF91c2VyX2JhY2tlbmQiOiJhY2NvdW50cy5iYWNrZW5kLkVtYWlsQXV0aCIsIl9hdXRoX3VzZXJfaWQiOiIxMiJ9",
+        "expire_date": "2018-04-13T19:29:01.663Z"
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$Cjfi8MXrnFwK$CToP+DULC4NS+YP5JHXSFdt+xeR48xIqSSFGfveaqeQ=",
+        "last_login": null,
+        "is_superuser": true,
+        "username": "hagrit9@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "hagrit9@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-03-28T20:02:22.623Z",
+        "is_merchant": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 2,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$iBE27Ee0GkuU$RYDkB07+TQ7DiUVFH3TrsENAWgypOl6OlzRw3MBSMmo=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "test@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-28T21:09:25.350Z",
+        "is_merchant": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 3,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$dTpxfvJb8MGE$4uLGEdIYQ3RhsoB2ofPQzm04AG29ksX54jG59eC41HI=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "test2@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "test2@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-28T21:12:29.323Z",
+        "is_merchant": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$bDRVArfrYudL$w4A37ZCosswiXFenz/8dxub6oIGZoHEFajVH2ChOxOI=",
+        "last_login": "2018-03-28T21:27:48.912Z",
+        "is_superuser": false,
+        "username": "test3@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "test3@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-28T21:27:48.311Z",
+        "is_merchant": "1",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$dGDuSFaFqRDY$VwS/xsgXv2AWEvIsI/4QNHoFGjhBHIqfKXEj17fr+oc=",
+        "last_login": "2018-03-28T21:31:32.816Z",
+        "is_superuser": false,
+        "username": "test5@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "test5@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-28T21:31:32.127Z",
+        "is_merchant": "1",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$X5FZQxK2aD7d$u8lw42husAXRLRafm8yACtxt2CN3VgKl6L7Kb5rM9Rw=",
+        "last_login": "2018-03-28T21:37:40.517Z",
+        "is_superuser": false,
+        "username": "test6@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "test6@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-28T21:37:39.865Z",
+        "is_merchant": "2",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$YQ4G53oYKnCx$cAxad9+TI9+EgBpHEnLzUxzm3GbWf6SDtIxQI/lFZv0=",
+        "last_login": "2018-03-28T21:40:36.589Z",
+        "is_superuser": false,
+        "username": "test7@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "test7@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-28T21:40:35.965Z",
+        "is_merchant": "1",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$QsqWqWQ0mfrS$nGU/8xkrm5tf6+v+cKtBn2k2Fvv5Y7wNrJdb1UX3Bhs=",
+        "last_login": "2018-03-28T21:42:34.859Z",
+        "is_superuser": false,
+        "username": "test8@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "test8@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-28T21:42:34.313Z",
+        "is_merchant": "1",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$BaHGTK2diFev$Jst6lyA+JmC0DbBMH6ygRmG/MlWbyci0casYTJhisEk=",
+        "last_login": "2018-03-30T18:41:02.170Z",
+        "is_superuser": false,
+        "username": "testM@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "testM@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-30T18:41:01.428Z",
+        "is_merchant": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$xaKJRyjE062w$of1MzKyRHPlhAwHWZnFjMT/PFlIF6nhRdCXg0OAooVc=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "testM2@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "testM2@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-30T18:43:41.239Z",
+        "is_merchant": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$es5zZ7EvnHZG$pO1BhZXtVExpX5lp0zIJf97d/HkM2rxgcwlAkDGkjTQ=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "Testm3@gmail.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "Testm3@gmail.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-30T18:47:19.139Z",
+        "is_merchant": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$mKgdpVj9Bjp3$SpG0QHkpnTJWUInQ0ZgNdzcyRfL1c7k24O+jACnV1IA=",
+        "last_login": "2018-04-22T20:00:39.266Z",
+        "is_superuser": false,
+        "username": "t@g.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "t@g.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-30T18:56:18.996Z",
+        "is_merchant": "Yes",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$5x9qXRdT7CCO$PPsQEzkEeutNDGdHKGgKIIYXuYjAt0/Mk0FEl3tsR1c=",
+        "last_login": "2018-03-30T19:18:18.030Z",
+        "is_superuser": false,
+        "username": "user@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "user@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-03-30T19:17:42.834Z",
+        "is_merchant": "No",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$LHRnXvEV6ESa$swbhXxJbUmhtMdw4dx+y4zPYeMdzARKM/5aaeRO2xfY=",
+        "last_login": "2018-04-21T15:20:16.769Z",
+        "is_superuser": false,
+        "username": "newuser@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "newuser@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-04-21T15:20:16.021Z",
+        "is_merchant": "No",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 15,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$Z1f7txb8HAk6$fcssJCaVoK9GOUSZvCMoPuno+6rWAiLJzsv7dqPAvC0=",
+        "last_login": "2018-04-21T19:39:57.805Z",
+        "is_superuser": false,
+        "username": "merchant@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "merchant@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-04-21T19:39:57.294Z",
+        "is_merchant": "Yes",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$VgiXyCCzNwQL$oaepCLoQXZdaXgleqyFHaYxX1+TxcdlvFsO8L3N80e8=",
+        "last_login": "2018-04-21T19:43:45.245Z",
+        "is_superuser": false,
+        "username": "merchant2@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "merchant2@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-04-21T19:43:44.735Z",
+        "is_merchant": "Yes",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 17,
+    "fields": {
+        "password": "pbkdf2_sha256$36000$j9gGa7wsC99W$nuMlUzR6W2WTelS5gajTm7lExAYWbEIx99+oJq1zXsw=",
+        "last_login": "2018-04-22T18:27:03.743Z",
+        "is_superuser": false,
+        "username": "user2@cynicalist.com",
+        "first_name": "",
+        "last_name": "",
+        "email": "user2@cynicalist.com",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-04-21T19:44:04.330Z",
+        "is_merchant": "No",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "merchant_dash.ad",
+    "pk": 2,
+    "fields": {
+        "subject": "Testing Ads",
+        "user": [
+            "t@g.com"
+        ],
+        "ad_summary": "No Ad Summary",
+        "description": "<p><strong>This is a test of the ads setup.</strong></p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<h1><strong>This is Heading 1</strong></h1>\r\n\r\n<h2><strong>This is heading 2</strong></h2>\r\n\r\n<p><strong><img alt=\"\" src=\"https://scontent.fman1-2.fna.fbcdn.net/v/t1.0-9/18156951_1901734480069741_6597870641695870816_n.jpg?_nc_cat=0&amp;oh=d8b6cc092497767b14e2f9bd427a04fd&amp;oe=5B3AF47E\" style=\"height:798px; width:800px\" /></strong></p>",
+        "start_date": "2018-01-01",
+        "end_date": "2026-01-01",
+        "published": "Yes",
+        "ad_price": "55.00"
+    }
+},
+{
+    "model": "merchant_dash.ad",
+    "pk": 3,
+    "fields": {
+        "subject": "Manchester Dog Mansion",
+        "user": [
+            "t@g.com"
+        ],
+        "ad_summary": "This is the beautiful dog mansion located in Manchester. This is the beautiful dog mansion located in Manchester. This is the beautiful dog mansion located in Manchester.",
+        "description": "<h1>This is it!</h1>\r\n\r\n<p><img alt=\"\" src=\"https://barkpost.com/wp-content/uploads/2015/05/ppFT1.jpg\" style=\"height:430px; width:670px\" /></p>\r\n\r\n<p>This it the room!</p>",
+        "start_date": "2020-01-01",
+        "end_date": "2023-01-01",
+        "published": "Yes",
+        "ad_price": "55.00"
+    }
+},
+{
+    "model": "merchant_dash.ad",
+    "pk": 4,
+    "fields": {
+        "subject": "Manchester Dog Mansion",
+        "user": [
+            "t@g.com"
+        ],
+        "ad_summary": "This is the beautiful dog mansion located in Manchester. This is the beautiful dog mansion located in Manchester. This is the beautiful dog mansion located in Manchester.",
+        "description": "<h1>This is the hotel!</h1>\r\n\r\n<p><img alt=\"\" src=\"https://barkpost.com/wp-content/uploads/2015/05/ppFT1.jpg\" style=\"height:430px; width:670px\" /></p>\r\n\r\n<p>This is it!</p>",
+        "start_date": "2019-04-17",
+        "end_date": "2019-07-17",
+        "published": "Yes",
+        "ad_price": "55.99"
+    }
+},
+{
+    "model": "contact_us_app.contactus",
+    "pk": 1,
+    "fields": {
+        "contact_title": "Test",
+        "contact_name": "Elliott",
+        "contact_email": "elliott@gmail.com",
+        "query_type": "Buyer Problems",
+        "query_text": "This is a test"
+    }
+},
+{
+    "model": "contact_us_app.contactus",
+    "pk": 2,
+    "fields": {
+        "contact_title": "This is test 2",
+        "contact_name": "Frank",
+        "contact_email": "frank@gmail.com",
+        "query_type": "Merchant Problems",
+        "query_text": "This is the second test"
+    }
+},
+{
+    "model": "contact_us_app.contactus",
+    "pk": 3,
+    "fields": {
+        "contact_title": "Test 3",
+        "contact_name": "Julie",
+        "contact_email": "julie@gmail.com",
+        "query_type": "General Chat",
+        "query_text": "Hey! Nice to meet you!"
+    }
+},
+{
+    "model": "contact_us_app.contactus",
+    "pk": 4,
+    "fields": {
+        "contact_title": "Test 5",
+        "contact_name": "James",
+        "contact_email": "james@gmail.com",
+        "query_type": "Merchant Problems",
+        "query_text": "Test this stuff is cool yea"
+    }
+},
+{
+    "model": "contact_us_app.contactus",
+    "pk": 5,
+    "fields": {
+        "contact_title": "This is another test",
+        "contact_name": "Theresa",
+        "contact_email": "The@gmail.com",
+        "query_type": "Merchant Problems",
+        "query_text": "This is amazing"
+    }
+},
+{
+    "model": "checkout.customersale",
+    "pk": 1,
+    "fields": {
+        "customer_id": [
+            "user2@cynicalist.com"
+        ],
+        "stripe_id": "tok_1CJk7KKIrAmx06SPcELNdaqH",
+        "checkout_email": "heinrich@journalister.co",
+        "payment_amount": "55.00",
+        "payment_date": "2018-04-22"
+    }
+},
+{
+    "model": "checkout.customersale",
+    "pk": 2,
+    "fields": {
+        "customer_id": [
+            "user2@cynicalist.com"
+        ],
+        "stripe_id": "tok_1CJkn5KIrAmx06SP5dIDBDPI",
+        "checkout_email": "heinrich@journalister.co",
+        "payment_amount": "55.00",
+        "payment_date": "2018-04-22"
+    }
+},
+{
+    "model": "checkout.customersale",
+    "pk": 3,
+    "fields": {
+        "customer_id": [
+            "user2@cynicalist.com"
+        ],
+        "stripe_id": "tok_1CJkpLKIrAmx06SP6o7Xxkd9",
+        "checkout_email": "heinrich@journalister.co",
+        "payment_amount": "55.00",
+        "payment_date": "2018-04-22"
+    }
+},
+{
+    "model": "checkout.customersale",
+    "pk": 4,
+    "fields": {
+        "customer_id": [
+            "user2@cynicalist.com"
+        ],
+        "stripe_id": "tok_1CJlcvKIrAmx06SPklWNzsEb",
+        "checkout_email": "h@c.com",
+        "payment_amount": "55.99",
+        "payment_date": "2018-04-22"
+    }
+}
+]

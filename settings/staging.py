@@ -1,12 +1,11 @@
 from base import *
+import dj_database_url
 
 DEBUG = False
 
+# Load the ClearDB connection details from the environment variable
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+    'default': dj_database_url.config('CLEARDB_DATABASE_URL')
 }
 
 STRIPE_PUBLISHABLE = os.getenv('STRIPE_PUBLISHABLE', 'pk_test_wJQGnHfgKP7A5TwD4x93baZu')
