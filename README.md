@@ -22,8 +22,13 @@ TBA
 ### Technologies Used
 Technology Name | Description
 ------------ | -------------
-[ckeditor]() | CKEditor provides a RichText editor that easily integrates with django and gives a far more easily usable text editor that others.
-[]() |
+[ckeditor](https://ckeditor.com/) | CKEditor provides a RichText editor that easily integrates with django and gives a far more easily usable text editor that others. | I used CkEditor to create the editor for the ad creation feature of the Merchant dashboard
+[Stripe](https://stripe.com/) | Stripe provides a payment platform to easily and safely process payments on django. | I used Stripe to setup the payment gateway for the vacation sales.
+[Bootstrap](https://getbootstrap.com/) | Bootstrap gives the developer a grid like system to work with when using HTML. This allows for easier design and mobile compatibility. | I used Bootstrap to allow me to streamline the mobile and desktop designs and to ensure that they both were responsive no matter what device the user uses. |
+[Google Fonts](https://fonts.google.com/) | Google Fonts provides the user with a wide variety of Fonts that anyone can use to customize their project more. | I used Google Fonts to give the website a bit personality, by not just using generic windows fonts. |
+[Python](https://www.python.org/) | Python is a programming language that lets you work quickly and integrate systems more effectively. | I used Python for the backend of the website.
+[SQLite](https://www.sqlite.org/index.html) | SQLite is a self-contained, high-reliability, embedded, full-featured, public-domain, SQL database engine. SQLite is the most used database engine in the world. | I used SQLite during the development of the website.
+
 
 ### Project Detailed explanation
 

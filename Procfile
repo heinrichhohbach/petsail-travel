@@ -1,0 +1,1 @@
+web: gunicorn Pet_Sail.wsgi:application
