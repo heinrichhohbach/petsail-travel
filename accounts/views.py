@@ -16,6 +16,7 @@ from models import User
 import arrow
 import json
 from merchant_dash.models import Ad
+from checkout.models import CustomerSale
 
 
 # Create your views here.
@@ -54,7 +55,9 @@ def register(request):
 
 @login_required(login_url='/login/')
 def profile(request):
-    return render(request, 'accounts/profile.html')
+    current_user = request.user
+    ads_p = CustomerSale.objects.filter(customer_id=current_user.id)
+    return render(request, 'accounts/profile.html', {'Customer': ads_p})
 
 
 @login_required(login_url='/login/')

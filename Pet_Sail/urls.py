@@ -26,7 +26,6 @@ urlpatterns = [
     # General setup
     url(r'^admin/', admin.site.urls),
     url(r'^$', home_views.get_index, name='index'),
-    url(r'^tinymce/', include('tinymce.urls')),
     url(r'^contact-us/$', contact_views.new_contact, name='contact_us'),
     url(r'^about-us/$', home_views.get_about, name='about'),
 
@@ -42,10 +41,12 @@ urlpatterns = [
     url(r'^post/$', merch_views.new_ad, name='new_post'),
     url(r'^all-ads/$', merch_views.all_ads, name='adlisting'),
     url(r'^post/delete/(?P<ad_id>\d+)/$', merch_views.delete_post, name='delete_post'),
+    url(r'^post/edit/(?P<ad_id>\d+)/$', merch_views.edit_ad, name='edit_post'),
 
     # Image Upload
     url(r'^ckeditor/', include(ck_url)),
 
     # Holiday Sale Checkout
-    url(r'^check-out/', checkout_views.checkoutview),
+    url(r'^checkout-sale/$', checkout_views.checkout_view_init, name='checkoutview'),
+    url(r'^check-out/$', checkout_views.checkoutview, name='checkout'),
 ]

@@ -7,11 +7,15 @@
     <!-- CSS REFERENCE END -->
     <div class="ad-details-style">
         <h3 id="ad-details-header-style"><a href="">{{ post.subject }}</a></h3>
+        <h4 id="ad-details-header-style2">Price: £{{ post.ad_price }}</h4>
 
         <p>{{ post.description|safe }}</p>
 
         <p>
             <button class="btn btn-primary" onclick="location.href='{% url 'adlisting' %}'">Back to Holiday Listings</button>
+            {% if user.is_merchant == 'No' %}
+            <button class="btn btn-info" onclick="location.href='{% url 'checkoutview' %}'">Buy this Holiday!</button>
+            {% endif %}
         </p>
 
     </div>

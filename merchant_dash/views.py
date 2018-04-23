@@ -45,3 +45,16 @@ def delete_post(request, ad_id):
     messages.success(request, "Your post was deleted!")
 
     return redirect('merchant')
+
+
+@login_required(login_url='/login/')
+def edit_ad(request, ad_id=None):
+    item = get_object_or_404(Ad, id=ad_id)
+    form = AdPostForm(request.POST or None, instance=item)
+    if form.is_valid():
+        ad = form.save(commit=False)
+        ad.user = request.user
+        ad.published = "Yes"
+        ad.save()
+        return redirect(ad_detail, ad.pk)
+    return render(request, 'merchant_dash/adpostform.html', {'form': form})

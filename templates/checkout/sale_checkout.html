@@ -13,14 +13,14 @@
 {% endblock %}
 
 {% block content %}
-  <form role="form" method="post" id="register-form" action="{% url '' %}">
+  <form role="form" method="post" id="register-form" action="{% url 'checkout' %}">
     <div id="credit-card-errors" style="display:none">
       <div class="alert-message block-message error" id="stripe-error-message"></div>
     </div>
 
-    <legend>Create a new account</legend>
     {% csrf_token %}
     {{ form|as_bootstrap }}
+    <h4>Checkout Amount:</h4><h4>£{{ Check }}</h4>
     <div class="form-group">
       <input class="btn btn-primary" id="validate_card_btn" name="commit" type="submit" value="Validate Credit Card">
     </div>

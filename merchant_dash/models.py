@@ -4,7 +4,6 @@ from __future__ import unicode_literals
 from django.db import models
 from django.utils import timezone
 from django.conf import settings
-from tinymce.models import HTMLField
 from django.urls import reverse
 from ckeditor.fields import RichTextField
 

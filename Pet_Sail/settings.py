@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     'accounts',
     'merchant_dash',
     'emoticons',
-    'tinymce',
     'bootstrap_datepicker',
     'ckeditor',
     'ckeditor_uploader',

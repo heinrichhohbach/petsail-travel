@@ -1,5 +1,5 @@
 from django import forms
-from accounts.models import User
+from .models import CustomerSale
 
 
 class CheckoutForm(forms.ModelForm):
@@ -10,7 +10,7 @@ class CheckoutForm(forms.ModelForm):
     MONTH_CHOICES = list(enumerate(MONTH_ABBREVIATIONS, 1))
     YEAR_CHOICES = [(i, i) for i in range(2015, 2036)]
 
-    email = forms.CharField()
+    checkout_email = forms.CharField(label='Payment Email')
     credit_card_number = forms.CharField(label='Credit card number')
     cvv = forms.CharField(label='Security code (CVV)')
     expiry_month = forms.ChoiceField(label="Month", choices=MONTH_CHOICES)
@@ -18,12 +18,11 @@ class CheckoutForm(forms.ModelForm):
     stripe_id = forms.CharField(widget=forms.HiddenInput)
 
     class Meta:
-        model = User
-        fields = ['email', 'stripe_id']
-        exclude = ['username']
+        model = CustomerSale
+        fields = ['checkout_email', 'stripe_id']
 
     def clean_email(self):
-        email = self.cleaned_data.get('email')
+        email = self.cleaned_data.get('checkout_email')
 
         if not email:
             message = "Please enter your email address"

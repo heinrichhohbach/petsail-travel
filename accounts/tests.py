@@ -8,14 +8,13 @@ from django import forms
 from django.conf import settings
 
 
-
 # Create your tests here.
 class SimpleTest(TestCase):
     def test_adding_something_simple(self):
-        self.assertEqual(1+2, 3)
+        self.assertEqual(1 + 2, 3)
 
     def test_adding_something_isnt_equal(self):
-        self.assertNotEqual(1+2, 4)
+        self.assertNotEqual(1 + 2, 4)
 
     def test_registration_form(self):
         form = UserRegistrationForm({

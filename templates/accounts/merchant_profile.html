@@ -23,6 +23,7 @@
                     <th>Start Date</th>
                     <th>End Date</th>
                     <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -33,6 +34,29 @@
                         <td>{{ ad.start_date }}</td>
                         <td>{{ ad.end_date }}</td>
                         <td id="delete-post-style"><a href="{% url 'delete_post' ad.id %}">Delete</a></td>
+                        <td id="edit-post-styele"><a href="{% url 'edit_post' ad.id %}">Edit</a></td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-12" id="ad-listing-table-border-mobile">
+        <table class="table table-striped table-bordered" id="ad-listing-table">
+            <thead>
+                <tr>
+                    <th>Vacation Title</th>
+                    <th>Description</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for ad in Ad %}
+                    <tr>
+                        <td id="vacation-title-style"><a href="{% url 'view_ad_post' ad.id %}">{{ ad.subject }}</a><p>(Click me for more detail)</p></td>
+                        <td>{{ ad.ad_summary}}</td>
+                        <td id="delete-post-style"><a href="{% url 'delete_post' ad.id %}">Delete</a></td>
+                        <td id="edit-post-styele"><a href="{% url 'edit_post' ad.id %}">Edit</a></td>
                     </tr>
                 {% endfor %}
             </tbody>

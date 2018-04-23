@@ -7,7 +7,7 @@ class AdPostForm(forms.ModelForm):
     subject = forms.CharField(label='Ad Title')
     start_date = forms.DateField(widget=SelectDateWidget(empty_label="Nothing"))
     end_date = forms.DateField(widget=SelectDateWidget(empty_label="Nothing"))
-    ad_price = forms.DecimalField(label="Price: (in GBP per day)")
+    ad_price = forms.DecimalField(label="Price: (in GBP)")
 
     class Meta:
         model = Ad
