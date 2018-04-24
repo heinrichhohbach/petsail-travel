@@ -18,13 +18,13 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="../static/custom-js/custom-js.js"></script>
-    <script src="https://codepen.io/elliott-finch/pen/VxagXK"></script>
+    <script src="https://codepen.io/elliott-finch/pen/VxagXK.js"></script>
     {% block head_js %}{% endblock %}
 </head>
 <body>
 <div class="container">
     <nav class="navbar navbar-expand-lg navbar-dark" id="desktop-navig-style">
-        <a class="navbar-brand" href="#"><span class="fui-settings-16 muted"><i class="fas fa-paw"></i>Pet Sail</span></a>
+        <a class="navbar-brand" href="{% url 'index' %}"><span class="fui-settings-16 muted"><i class="fas fa-paw"></i>Pet Sail</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
