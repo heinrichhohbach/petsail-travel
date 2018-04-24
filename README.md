@@ -39,7 +39,7 @@ Technology Name | Description | How I used the Technology
 [Django-forms-bootstrap](https://github.com/pinax/django-forms-bootstrap) | django-forms-bootstrap is a simple bootstrap filter for Django forms. Extracted from the bootstrap theme for Pinax. | I used Django-Forms-Bootstrap to create the bootstrap form design. This allows for the form to adjust according to the screensize and helps place the form into the bootstrap grid design.
 [ClearDB MySQL](https://devcenter.heroku.com/articles/cleardb) | ClearDB is a powerful, fault tolerant database-as-a-service in the cloud for your MySQL powered applications. | ClearDB is the add-on Heroku uses to run MySQL databases. The add on easily generates tables from the Django Models setup in the project files.
 [Django built in Password hashing](https://docs.djangoproject.com/en/2.0/topics/auth/passwords/) | Django provides a User class that integrates password hashing by itself. | Rather than building my own hashing methods, I used the Django hashing feature that's included in their User Model, because it's a safe method that already fulfills the need I had with password encryption.
-
+[Emoji CSS](https://afeld.github.io/emoji-css/) | Emoji CSS provides a template of emojis to use on a website. | I used this CSS library to add a couple emojis to my site to make it more interesting and unique.
 
 ### Project Detailed explanation
 
