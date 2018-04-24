@@ -28,7 +28,7 @@ insert, edit, delete and read functions to be performed.
 
 ### Technologies Used
 Technology Name | Description | How I used the Technology
------------- | -------------
+------------ | ------------- | -------------
 [ckeditor](https://ckeditor.com/) | CKEditor provides a RichText editor that easily integrates with django and gives a far more easily usable text editor that others. | I used CkEditor to create the editor for the ad creation feature of the Merchant dashboard
 [Stripe](https://stripe.com/) | Stripe provides a payment platform to easily and safely process payments on django. | I used Stripe to setup the payment gateway for the vacation sales.
 [Bootstrap](https://getbootstrap.com/) | Bootstrap gives the developer a grid like system to work with when using HTML. This allows for easier design and mobile compatibility. | I used Bootstrap to allow me to streamline the mobile and desktop designs and to ensure that they both were responsive no matter what device the user uses. |
