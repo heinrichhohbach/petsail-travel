@@ -1,6 +1,6 @@
 # Pet Vacation Ad Site Project - Code Academy Stream 3
 
-You can view the project here: LINK NOT YET AVAILABLE
+You can view the project here: http://pet-sail.herokuapp.com
 
 
 ### Purpose and need of project
@@ -27,7 +27,7 @@ insert, edit, delete and read functions to be performed.
 
 
 ### Technologies Used
-Technology Name | Description
+Technology Name | Description | How I used the Technology
 ------------ | -------------
 [ckeditor](https://ckeditor.com/) | CKEditor provides a RichText editor that easily integrates with django and gives a far more easily usable text editor that others. | I used CkEditor to create the editor for the ad creation feature of the Merchant dashboard
 [Stripe](https://stripe.com/) | Stripe provides a payment platform to easily and safely process payments on django. | I used Stripe to setup the payment gateway for the vacation sales.
